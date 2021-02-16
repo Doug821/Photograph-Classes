@@ -35,6 +35,8 @@ header {
 .logo {
     font-size: 36px;
     font-weight: 300;
+
+    cursor: pointer;
 }
 
 .nav-menu {
@@ -56,6 +58,25 @@ header {
     text-decoration: none;
     color: #fff;
     font-size: 18px;
+
+    position: relative;
+    transition: 0.7s ease;
+}
+
+.nav-menu ul li a:hover::before {
+    width: 100%;
+}
+
+.nav-menu ul li a::before {
+    content: "";
+    width: 0;
+    height: auto;
+
+    transition: 0.7s ease;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #fff;
 }
 
 .login {
@@ -63,6 +84,16 @@ header {
     border: 1px solid #fff;
     border-radius: 54px;
     padding: 2px 24px;
+
+    transition: 0.7s ease;
+}
+
+.login:hover {
+    background: #4f4f4f;
+
+    border: 1px solid #4f4f4f;
+
+    transform: scale(1.01);
 }
 
 .login a {
@@ -283,6 +314,13 @@ header {
 
 .category {
     position: relative;
+    transition: 0.7s ease;
+
+    cursor: pointer;
+}
+
+.category:hover {
+    transform: scale(1.1);
 }
 
 .category .category-caption {
