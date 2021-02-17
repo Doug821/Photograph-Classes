@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 
+    font-size: 10px;
     font-family: "Mukta", sans-serif;
 }
 
@@ -33,8 +34,8 @@ header {
 }
 
 .logo {
-    font-size: 36px;
-    font-weight: 300;
+    width: 100px;
+    height: auto;
 
     cursor: pointer;
 }
@@ -118,6 +119,7 @@ header {
     font-size: 36px;
     background: rgba(51, 51, 51, 0.66);
     border-radius: 73px;
+    text-align: center;
 
     padding: 7px 100px;
     position: relative;
@@ -129,7 +131,8 @@ header {
     width: 20px;
     height: 5px;
     left: 64px;
-    top: 36px;
+    top: 50%;
+    bottom: 50%;
 
     background: #ffffff;
     border-radius: 10px;
@@ -141,7 +144,8 @@ header {
     width: 20px;
     height: 5px;
     right: 64px;
-    top: 36px;
+    top: 50%;
+    bottom: 50%;
 
     background: #ffffff;
     border-radius: 10px;
@@ -272,6 +276,9 @@ header {
     padding: 120px 0;
     height: 100vh;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 1440px;
     width: 100%;
 
@@ -308,14 +315,20 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     margin-top: 81px;
+
+    width: 95%;
 }
 
 .category {
     position: relative;
     transition: 0.7s ease;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 90%;
     cursor: pointer;
 }
 
@@ -323,12 +336,16 @@ header {
     transform: scale(1.1);
 }
 
+.category img {
+    width: 90%;
+}
+
 .category .category-caption {
     position: absolute;
-    left: 30px;
+    left: 5%;
     bottom: 20px;
 
-    width: 275px;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
