@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Footag</title>
+</head>
+
+<body>
+    <!-- BACKGROUND BOXES -->
+    <section class="bgItems"></section>
+    <header>
+        <div class="headerContainer">
+            <img src="../img/Logo.svg" alt="Photage" class="logo">
+            <nav class="navMenu">
+                <ul>
+                    <li><a href="#">Photographers</a></li>
+                    <li><a href="#">Classes</a></li>
+                    <li><a href="#">Workshop</a></li>
+                </ul>
+                <div class="login"><a href="#">Login</a></div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="container-item-1">
+            <h1 class="title">Landscape Photography</h1>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor dignissim nunc
+                sit amet vestibulum. Pellentesque ut odio nisl. Sed mi enim, blandit vitae tellus et, blandit
+                ullamcorper arcu. Aliquam a ex augue. Vestibulum pellentesque porttitor enim nec dapibus. Suspendisse
+                posuere mattis velit, non lacinia metus tempor quis. Praesent sapien ipsum, venenatis ornare feugiat ac,
+                congue quis velit. Pellentesque posuere augue in ante accumsan euismod.</p>
+            <button class="check" type="button" onclick="redirect()">Check it out</button>
+        </div>
+        <div class="container-item-2">
+            <img src="../img/mockup.png" alt="Photography Mockup">
+        </div>
+    </section>
+    <section class="cinematographic">
+        <div class="textContainer">
+            <h1 class="title">Cinematographic Touch</h1>
+            <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor dignissim nunc sit amet
+                vestibulum. Pellentesque ut odio nisl. Sed mi enim, blandit vitae tellus et, blandit ullamcorper arcu.
+                Aliquam a ex augue.
+            </p>
+        </div>
+        <div class="videoContainer">
+            <div class="videoMask">
+                <video class="videoItem1"
+                    src="https://player.vimeo.com/external/372328629.sd.mp4?s=a474bdfaf925fd4704569439c9f56399cecbf3b6&profile_id=139&oauth2_token_id=57447761?quality=1080p"
+                    loop muted></video>
+                <div class="button button1">
+                    <img class="pause1" src="../img/stop-circle.svg" alt="">
+                    <img class="play1" src="../img/play.svg" alt="">
+                </div>
+            </div>/page1.html
+            <div class="videoMask">
+                <video class="videoItem2"
+                    src="https://player.vimeo.com/external/459030212.sd.mp4?s=277d1899bc58632a4dbbb912bc4a38b874120a0e&profile_id=139&oauth2_token_id=57447761?quality=4k"
+                    loop muted></video>
+                <div class="button button2">
+                    <img class="pause2" src="../img/stop-circle.svg" alt="">
+                    <img class="play2" src="../img/play.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <script src="app.js"></script> -->
+    <script src="../javascript/redirect.js"></script>
+    <script src="../javascript/buttons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+</body>
+
+</html>

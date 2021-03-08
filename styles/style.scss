@@ -1,0 +1,56 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mukta", sans-serif;
+}
+
+
+@import "partials/_colors.scss";
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    background-color: $background;
+}
+
+img,
+svg {
+    display: block;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+}
+
+.border {
+    border: 1px solid red;
+}
+
+p {
+    font-size: 14px;
+    color: $white;
+    letter-spacing: 1px;
+    line-height: 140%;
+}
+
+.bgItems {
+    width: 100%;
+    height: 200vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../img/bg.png');
+    background-size: cover;
+    z-index: -1
+}
+
+
+@import './partials/header';
+@import './partials/main';
+@import './partials/section2';
